@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             val newStudent =
-                Student(name = "son", age = 24, address = "District 12, Ho Chi Minh City")
+                Student(name = "son", age = 24, address = "District 12, Ho Chi Minh City", gender = "male")
             studentDao.insert(newStudent)
         }
 
