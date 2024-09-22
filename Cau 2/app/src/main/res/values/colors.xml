@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="folder">#D1D1D1</color>
+    <color name="no_recently_accessed_apps">#4B4B4B</color>
+</resources>

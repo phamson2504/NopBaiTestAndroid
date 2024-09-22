@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llApp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        android:src="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Name"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+</LinearLayout >

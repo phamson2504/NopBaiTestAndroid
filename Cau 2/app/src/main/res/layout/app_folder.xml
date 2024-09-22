@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llFolder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/folder"
+        android:padding="5dp"
+        android:columnCount="2"
+        android:rowCount="2">
+        <ImageView
+            android:id="@+id/folderIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher_background"
+            />
+        <ImageView
+            android:id="@+id/folderIcon2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginStart="2dp"/>
+
+        <ImageView
+            android:id="@+id/folderIcon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="2dp"
+            />
+        <ImageView
+            android:id="@+id/folderIcon4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/folderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Name"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

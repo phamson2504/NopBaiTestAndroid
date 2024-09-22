@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="16dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Recently Used Apps"
+           android:textSize="18sp"
+           android:layout_marginBottom="10dp"/>
+       <!-- RecyclerView for recent apps-->
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recentAppsRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="16dp"
+           android:visibility="gone" />
+       <com.google.android.material.progressindicator.LinearProgressIndicator
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:id="@+id/loadingRecent"/>
+       <!-- TextView notification no app-->
+       <TextView
+           android:id="@+id/noRecentAppsText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="No recently accessed apps"
+           android:textSize="20sp"
+           android:textAlignment="center"
+           android:textColor="@color/no_recently_accessed_apps"
+           android:visibility="gone"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@android:color/darker_gray"
+           android:layout_marginTop="32dp"
+           android:layout_marginBottom="16dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="All Apps"
+           android:textSize="18sp"
+           android:layout_marginBottom="10dp"/>
+       <!-- RecyclerView for all apps -->
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/allAppsRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:layout_marginTop="10dp"/>
+   </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/loading"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
