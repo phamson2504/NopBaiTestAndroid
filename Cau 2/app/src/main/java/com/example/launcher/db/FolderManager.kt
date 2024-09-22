@@ -30,6 +30,9 @@ class FolderManager(context: Context) {
         if (existingFolderIndex != -1) {
             allFolder[existingFolderIndex] = updatedFolder
         }
+        if (allFolder[existingFolderIndex].apps.size == 0 ){
+            allFolder.removeAt(existingFolderIndex)
+        }
         saveFolders(allFolder)
     }
 
